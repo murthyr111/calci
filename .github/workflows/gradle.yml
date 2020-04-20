@@ -24,11 +24,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build -x test
-    - name: Upload math result for job 2
-      uses: actions/upload-artifact@v1
-      with:
-          name: homework
-          path: homework/math-homework.txt
+
 
 
   test:
