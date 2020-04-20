@@ -34,8 +34,9 @@ jobs:
     - name: Upload JUnit Reports
       uses: actions/upload-artifact@v1
       with:
-          name: Reports
-          path: build/reports/tests/test/index.html
+          name: Test_Reports
+          path: build/reports/tests/test/*,build/reports/tests/test/index.html
+   
    
 
 
