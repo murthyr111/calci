@@ -41,7 +41,7 @@ jobs:
      - name: Execute tests
        run: ./gradlew test
      - name: publish jar
-        uses: actions/upload-artifact@v1
-        with:
+     - uses: actions/upload-artifact@v1
+       with:
           name: upload jar
           path: dist/jar/Calculator-1.0.jar
