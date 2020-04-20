@@ -26,11 +26,16 @@ jobs:
       run: ./gradlew build -x test
     - name: Execute tests
       run: ./gradlew test
-    - name: Upload math result for job 2
+    - name: Upload JAR artifacts
       uses: actions/upload-artifact@v1
       with:
           name: JAR File
           path: dist/jar/Calculator-1.0.jar
+    - name: Upload JUnit Reports
+      uses: actions/upload-artifact@v1
+      with:
+          name: Reports
+          path: build/reports/tests/test/**/*.*
    
 
 
