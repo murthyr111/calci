@@ -2,7 +2,7 @@
 class Calculator {
 	
 	public long addition(long a, long b) {
-		System.out.println("*********");
+		System.out.println("********");
 		return a+b;
 	}
 	
